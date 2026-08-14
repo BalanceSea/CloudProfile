@@ -1,0 +1,3 @@
+settings:
+  # 是否允许玩家蹲下右键玩家查看该玩家档案
+  sneakLook: true

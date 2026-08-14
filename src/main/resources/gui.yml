@@ -1,0 +1,106 @@
+# 该界面内所有地方都支持变量解析
+# 界面特殊TYPE: Helmet Chestplate Leggings Boots Hand OffHand
+# 分别对应 头盔 胸甲 护腿 靴子 主手 副手
+Title: "&fCloudProfile | 玩家 %player_name% 个人档案"
+
+Layout:
+  - "####i####"
+  - "# 1     #"
+  - "#526    #"
+  - "# 3     #"
+  - "# 4     #"
+  - "#########"
+
+Icons:
+  # 隔板
+  '#':
+    display:
+      # 物品名称
+      name: "&7隔板"
+      # 物品材质
+      mats: "Gray_Stained_Glass_Pane"
+      # CustomModelData数据 默认为-1
+      cmd: -1
+      # 物品描述
+      lore:
+        - "&7我只是个隔板"
+        - "&e爱上一只小猪?"
+    # 这里使用的是Kether脚本
+    actions:
+      # 左键点击触发音效
+      left:
+        - 'sound UI_BUTTON_CLICK by 1 1'
+      # 右键触发tell
+      right:
+        - 'tell "你是一只猪猪"'
+        - 'sound entity.pig.ambient by 1 1'
+  # 玩家信息
+  'i':
+    display:
+      name: "&7玩家: &f%player_name%"
+      mats: "player_head"
+      lore:
+        - "&7金币余额: &e%xconomy_balance%"
+        - "&7点券余额: &e%playerpoints_points%"
+  '1':
+    Type: Helmet
+    display:
+      # 回退材质 如果玩家没有对应槽位的物品 将使用该材质
+      # 如果想显示空白则材质填写air
+      name: "&f玩家头盔"
+      mats: "stone"
+      lore:
+        - "&7玩家头盔"
+    actions:
+      left:
+        - 'sound UI_BUTTON_CLICK by 1 1'
+  '2':
+    Type: Chestplate
+    display:
+      name: "&f玩家胸甲"
+      mats: "stone"
+      lore:
+        - "&7玩家胸甲"
+    actions:
+      left:
+        - 'sound UI_BUTTON_CLICK by 1 1'
+  '3':
+    Type: Leggings
+    display:
+      name: "&f玩家护腿"
+      mats: "stone"
+      lore:
+        - "&7玩家护腿"
+    actions:
+      left:
+        - 'sound UI_BUTTON_CLICK by 1 1'
+  '4':
+    Type: Boots
+    display:
+      name: "&f玩家靴子"
+      mats: "stone"
+      lore:
+        - "&7玩家靴子"
+    actions:
+      left:
+        - 'sound UI_BUTTON_CLICK by 1 1'
+  '5':
+    Type: Hand
+    display:
+      name: "&f玩家主手"
+      mats: "stone"
+      lore:
+        - "&7玩家主手"
+    actions:
+      left:
+        - 'sound UI_BUTTON_CLICK by 1 1'
+  '6':
+    Type: OffHand
+    display:
+      name: "&f玩家副手"
+      mats: "stone"
+      lore:
+        - "&7玩家副手"
+    actions:
+      left:
+        - 'sound UI_BUTTON_CLICK by 1 1'

@@ -1,0 +1,17 @@
+# 前缀
+prefix: "&7[&b玩家个人档案系统&7] &r"
+
+# 档案界面打开提示
+profile-other-open: "&a已为您打开玩家 &e{player_name} &a的个人档案"
+profile-self-open: "&a已打开您的个人档案"
+# 目标玩家不在线
+player-off-online: '&c目标玩家 &e{0} &c不在线'
+# 帮助信息
+help-message:
+  - '&b指令帮助'
+  - ' &7- /cp profile [玩家名] &f- 查看自身/目标玩家档案'
+  - ' &7- /cp reload &f- 重载配置文件'
+# 重载提示
+reload-message: '&a重载配置成功'
+# 打开档案失败提示
+profile-open-other-fail: '&c打开玩家 &e{0} &c的个人档案失败'
