@@ -169,7 +169,7 @@ jobs:
         uses: softprops/action-gh-release@v2
         with:
           tag_name: ${{ needs.build.outputs.version }}
-          name: BilibiliVideo ${{ needs.build.outputs.version }}
+          name: CloudProfile ${{ needs.build.outputs.version }}
           body: |
             <div align="center">
 
